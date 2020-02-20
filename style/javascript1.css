@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 50px;
+  left: 380px;
+  z-index: 2;
+  color: white;
+}
+
+img {
+  position: absolute;
+}
+
+.textbox {
+  position: absolute;
+  top: 130px;
+  left: 380px;
+  z-index: 2;
+  padding: 0px 25px;
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.scene {
+  width: 1000px;
+  top: 35px;
+  left: 340px;
+  z-index: 1;
+}
+
+.block {
+  position: static;
+  width: 50px;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.body {
+  width: 180px;
+  top: 611px;
+  left: 950px;
+  z-index: 2;
+}
+
+.stripe {
+  width: 180px;
+  top: 611px;
+  left: 950px;
+  z-index: 3;
+}
+
+.head {
+  width: 80px;
+  top: 525px;
+  left: 1000px;
+  z-index: 3;
+}
+
+.hat {
+  width: 160px;
+  top: 470px;
+  left: 963px;
+  z-index: 4;
+}
