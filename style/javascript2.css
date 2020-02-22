@@ -10,4 +10,14 @@
   body {
     font-family: 'tstarmono', Courier, monospace;
     color: #2B2B2B;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+
+  p {
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
   }
