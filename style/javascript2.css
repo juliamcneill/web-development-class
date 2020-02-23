@@ -12,6 +12,7 @@
     color: #2B2B2B;
     width: 800px;
     margin: auto;
+    padding-top: 40px;
     text-align: center;
   }
 
@@ -20,4 +21,23 @@
     padding: 20px;
     border-radius: 20px;
     border: 2px solid black;
+  }
+
+  #imgcontainer {
+    width: 700px;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  img {
+    position: inline-block;
+  }
+
+  .cup {
+    padding: 0px 10px;
+  }
+
+  #prize {
+    position: relative;
+    top: -140px;
   }
