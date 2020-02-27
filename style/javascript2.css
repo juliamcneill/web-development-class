@@ -23,6 +23,11 @@
     border: 2px solid black;
   }
 
+  #moneytracker {
+    width: 200px;
+    margin: auto;
+  }
+
   #imgcontainer {
     width: 700px;
     margin: auto;
