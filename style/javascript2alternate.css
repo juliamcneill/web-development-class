@@ -10,14 +10,16 @@
 body {
   font-family: 'tstarmono', Courier, monospace;
   color: #2B2B2B;
-  width: 1200px;
+  width: 800px;
   margin: auto;
   padding-top: 40px;
   text-align: center;
 }
 
 h1 {
-  margin: auto;
+  width: 300px;
+  float: left;
+  margin-left: 40px;
 }
 
 p {
@@ -27,25 +29,11 @@ p {
   background-color: #F0F0F0;
   border: grey solid 2px;
   box-shadow: 5px 7px grey;
+  clear: both;
 }
 
 img {
   position: inline-block;
-}
-
-img:hover {
-  cursor: pointer;
-}
-
-#gamecontainer {
-  width: 800px;
-  float: left;
-}
-
-#resultscontainer {
-  width: 250px;
-  margin-left: 120px;
-  float: left;
 }
 
 #moneytracker {
@@ -63,10 +51,12 @@ img:hover {
   border-radius: 20px;
   color: #2B2B2B;
   width: 180px;
-  margin: auto;
   font-size: 20px;
   background-color: white;
   border: grey solid 1px;
+  float: left;
+  margin-left: 210px;
+  margin-top: 20px;
 }
 
 #playagain:hover {
@@ -95,45 +85,12 @@ img:hover {
   z-index: 1;
 }
 
-#resultsheading {
-  font-size: 1.5em;
-  font-weight: bold;
-  width: 80px;
-  margin-top: 30px;
-  margin-left: 110px;
-  margin-bottom: 10px;
-  float:left;
-}
-
-#clear {
-  width: 30px;
-  font-size: 12px;
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  float: left;
-  color: grey;
-}
-
-#clear:hover {
-  color: #2B2B2B;
-  cursor: pointer;
-}
-
-#results {
-  width: 250px;
-  height: 500px;
-  overflow: scroll;
-  clear: both;
-}
-
 #credit {
-  padding-top: 100px;
+  padding-top: 110px;
   font-size: 14px;
-  clear: both;
 }
 
-#alternate {
+#main {
   position: absolute;
   right: 10px;
   top: 5px;
@@ -141,15 +98,6 @@ img:hover {
   color: grey;
 }
 
-#alternate:hover {
+#main:hover {
   color: #2B2B2B;
-  cursor: pointer;
-}
-
-#supercoinmessage {
-  position: relative;
-  width: 215px;
-  bottom: 640px;
-  left: 600px;
-  z-index: 3;
 }

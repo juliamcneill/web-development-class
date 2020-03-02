@@ -7,23 +7,43 @@
     <link rel="stylesheet" type="text/css" href="style/javascript2.css">
   </head>
   <body>
-    <h1>Find the coin!</h1>
-    <p>Select a cup below by clicking on it - when you do, you will either find a coin or nothing. If you find a coin you will earn $5, and if you find nothing you will lose $5. The game can continue as long as you have money in your bank to play another round.</p>
-    <p id="moneytracker">$50 left</p>
 
-    <div id="imgcontainer">
+    <div id="gamecontainer">
 
-      <img class="cup" src="images/javascript2/cup.png">
-      <img class="cup" src="images/javascript2/cup.png">
-      <img class="cup" src="images/javascript2/cup.png">
+      <h1 id="title">Find the Coin!</h1>
 
-      <img id="prize" src="images/javascript2/prize.png">
+      <p>Select a cup below by clicking on it - when you do, you will either find a coin or nothing. If you find a coin you will earn $5, and if you find nothing you will lose $5. The game can continue as long as you have money in your bank to play another round.</p>
+      <p id="moneytracker">$<span id="dollaramount">50</span> Left</p>
+
+      <div id="imgcontainer">
+
+        <img class="cups" id="cup1" src="images/javascript2/cup.png">
+        <img class="cups" id="cup2" src="images/javascript2/cup.png">
+        <img class="cups" id="cup3" src="images/javascript2/cup.png">
+
+        <img id="prize" src="images/javascript2/prize.png">
+
+      </div>
+
+      <span id="playagain">Play Again</span>
 
     </div>
 
-    <script>
+    <div id="resultscontainer">
 
-    </script>
+      <span id="resultsheading">Results</span>
+      <span id="clear">(Clear)</span>
+      <p id="results"><strong>Choice &#9646; Location &#9646; Result</strong><br /> <br /><span id="resultslist"></span></p>
+
+    </div>
+
+    <footer id="credit">Cup by Design GigaSavvy & Coins by Ben Davis from the Noun Project</footer>
+
+    <a href="javascript2alternate.html" id="alternate">Alternate Version</a>
+
+    <p id="supercoinmessage">YOU ARE IN A SUPERCOIN ROUND! This coin is worth double a normal coin!</p>
+
+    <script type="text/javascript" src="js/javascript2.js"></script>
 
   </body>
 </html>
