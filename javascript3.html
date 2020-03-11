@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+      <title>Julia McNeill</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <link rel="stylesheet" type="text/css" href="style/javascript3.css">
+  </head>
+  <body>
+      <h1>My Daily Log</h1>
+
+      <div class="tab" id="food"
+           data-content="foodcontent">Food</div>
+      <div class="tab" id="exercise"
+           data-content="exercisecontent">Exercise</div>
+      <div class="tab" id="mindfulness"
+           data-content="mindfulnesscontent">Mindfulness</div>
+
+      <div class="content hidden" id="foodcontent">
+        What did you eat today?
+        <form>
+          <input type="text">
+          <button class="addbutton" data-color="silver">Add</button>
+        </form>
+      </div>
+
+      <div class="content hidden" id="exercisecontent">
+        What did you move today?
+        <form>
+          <input type="text">
+          <button class="addbutton" data-color="lightgrey">Add</button>
+        </form>
+      </div>
+
+      <div class="content hidden" id="mindfulnesscontent">
+        How did you remain present today?
+        <form>
+          <input type="text">
+          <button class="addbutton" data-color="gainsboro">Add</button>
+        </form>
+      </div>
+
+      <div id="results"></div>
+
+      <footer>© 2020 Julia McNeill</footer>
+
+      <script type="text/javascript" src="js/javascript3.js"></script>
+
+  </body>
+</html>
