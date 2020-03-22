@@ -27,8 +27,6 @@ for (let i = 0; i < allAddButtons.length; i++) {
 let allTabs = document.querySelectorAll('.tab');
 for (let i = 0; i < allTabs.length; i++) {
 
-  console.log('hello!')
-
   allTabs[i].onclick = function(event) {
     let allPanels = document.querySelectorAll('.content');
     for (let j = 0; j < allPanels.length; j++) {
