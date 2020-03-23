@@ -35,8 +35,8 @@ for (let i = 0; i < allAddButtons.length; i++) {
     newElement.classList.add('listItem');
     newElement.classList.add(event.currentTarget.dataset.type);
 
-    let delButton = document.createElement('button');
-    delButton.innerHTML = 'delete';
+    let delButton = document.createElement('span');
+    delButton.innerHTML = 'x';
     delButton.classList.add('button');
     newElement.appendChild(delButton);
 
@@ -45,8 +45,8 @@ for (let i = 0; i < allAddButtons.length; i++) {
       newElement.classList.remove('listItem');
     }
 
-    let moveDownButton = document.createElement('button');
-    moveDownButton.innerHTML = '▽';
+    let moveDownButton = document.createElement('span');
+    moveDownButton.innerHTML = '↓';
     moveDownButton.classList.add('button');
     moveDownButton.classList.add('moveDownButton');
     newElement.appendChild(moveDownButton);
@@ -57,8 +57,8 @@ for (let i = 0; i < allAddButtons.length; i++) {
       }
     }
 
-    let moveUpButton = document.createElement('button');
-    moveUpButton.innerHTML = '△';
+    let moveUpButton = document.createElement('span');
+    moveUpButton.innerHTML = '↑';
     moveUpButton.classList.add('button');
     moveUpButton.classList.add('moveUpButton');
     newElement.appendChild(moveUpButton);
