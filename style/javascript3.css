@@ -82,10 +82,11 @@ input[type=text] {
   transition: border .3s ease-in-out;
 }
 
-footer {
-  padding-top: 50px;
+#footer {
+  bottom: 50px;
   font-size: 14px;
   clear: both;
+  position: absolute;
   text-align: center;
 }
 
