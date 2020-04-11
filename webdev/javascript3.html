@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+      <title>Julia McNeill</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <link rel="stylesheet" type="text/css" href="style/javascript3.css">
+  </head>
+  <body>
+      <h1>Daily To-Do List</h1>
+
+      <div class="tab selected" id="work"
+           data-content="workcontent">Work</div>
+      <div class="tab" id="health"
+           data-content="healthcontent">Health</div>
+      <div class="tab" id="life"
+           data-content="lifecontent">Life</div>
+
+      <div class="content" id="workcontent">
+        What work do you need to get done today?
+        <form>
+          <input type="text">
+          <button class="addbutton" data-color="silver" data-type="work">Add</button>
+        </form>
+      </div>
+
+      <div class="content hidden" id="healthcontent">
+        How will you be healthy today?
+        <form>
+          <input type="text">
+          <button class="addbutton" data-color="lightgrey" data-type="health">Add</button>
+        </form>
+      </div>
+
+      <div class="content hidden" id="lifecontent">
+        What else do you want to do today?
+        <form>
+          <input type="text">
+          <button class="addbutton" data-color="gainsboro" data-type="life">Add</button>
+        </form>
+      </div>
+
+      <div id="filter-box">
+        <label for="filter">Filter</label>
+        <select id="filter" onchange="filterFunction()">
+          <option value="all">All</option>
+          <option value="work">Work</option>
+          <option value="health">Health</option>
+          <option value="life">Life</option>
+        </select>
+      </div>
+
+      <div id="results"></div>
+
+      <div id="footer">&copy; 2020 Julia McNeill</div>
+
+      <script type="text/javascript" src="js/javascript3.js"></script>
+
+  </body>
+</html>
