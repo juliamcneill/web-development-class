@@ -8,29 +8,28 @@
   </head>
   <body>
 
-    <div id="introContainer">
-      <h1>Memory Matching Madness!</h1>
-      <p>Play a fast-paced game of "memory" and try and beat your best time!</p>
-      <button id="startButton">Start</button>
-    </div>
+  		<div id="introContainer">
+        <h1>Memory Matching Madness!</h1>
+        <p>Play a fast-paced game of "memory" and try and beat your best time!</p>
+  			<button id="startButton">Start!</button>
+  		</div>
 
-    <div id="gameContainer">
-      <h1>Ready, Set, Match!</h1>
-      <p>Time: <span id="timer"></span></p>
-      <div id="imgContainer"></div>
-    </div>
+  		<div id="gameContainer" class="hidden">
+  			<h1>Ready, Set, Match!</h1>
+        <p>Time: <span id='timeCounter'></span></p>
+  			<div id="imgContainer"></div>
+  		</div>
 
-    <div id="resultsContainer">
-      <h1>Game over!</h1>
-      <p>Your time: <span id="yourTime"></span></p>
-      <p>Best time: <span id="bestTime"></span></p>
-    </div>
+  		<div id="resultsContainer" class="hidden">
+  			<h1>Game Over!</h1>
+        <p>Your time: <span id='yourTime'></span></p>
+        <p>Best time: <span id='bestTime'></span></p>
+  			<button id='playAgainButton'>Play Again!</button>
+  		</div>
 
-    <footer id="credit">Julia McNeill</footer>
+    <footer>&copy; 2020 Julia McNeill</footer>
 
-    <audio id="correctSound" src="images/correct.wav" type="audio/wav"></audio>
-    <audio id="wrongSound" src="images/wrong.wav" type="audio/wav"></audio>
-
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
 
   </body>
