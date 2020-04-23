@@ -11,10 +11,10 @@ $(document).ready(function() {
               'gengar.png', 'eevee.png', 'bellsprout.png', 'squirtle.png',
               'seel.png', 'caterpie.png'];
 
-  // TIMER
+  // timer
   var bestTime;
-  if (localStorage.getItem(bestTime) === null) {
-    localStorage.setItem(bestTime, 10000000);
+  if (localStorage.getItem("bestTime") === null) {
+    localStorage.setItem("bestTime", 10000000);
   }
 
   var seconds = 0;
@@ -25,12 +25,12 @@ $(document).ready(function() {
     seconds++;
   }
 
-  // PLAY AGAIN
+  // play again
   $('#playAgainButton').click(function() {
     location.reload();
   });
 
-  // SET UP
+  // set up
   $('#startButton').click(setUp);
 
   function setUp() {
@@ -39,17 +39,17 @@ $(document).ready(function() {
 
     timer();
 
-    // CHOOSE RANDOM IMAGES
+    // choose random images
     var images = [];
-    for (let i=0; i<10; i++) {
+    for (let i = 0; i < 10; i++) {
       var random = Math.floor(Math.random() * pokemon.length);
       images.push('images/jquery/' + pokemon[random]);
       images.push('images/jquery/' + pokemon[random]);
       pokemon.splice(random, 1);
     }
 
-    // PUT RANDOM IMAGES IN RANDOM ORDER
-    for (let i=0; i<20; i++) {
+    // put random images in random order
+    for (let i = 0; i < 20; i++) {
       var tile = document.createElement('img');
       tile.src = 'images/jquery/pokeball.png';
       tile.draggable = false;
@@ -64,7 +64,7 @@ $(document).ready(function() {
     }
   }
 
-  // GAME PLAY
+  // game play
   var currentChoice;
   var lastChoice;
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
   var matchCount = 0;
 
   function tester(event) {
-    // CHECK THAT CLICK IS ALLOWED
+    // check that this selection is allowed
     if (this.dataset.alreadyMatched == 'true') {
       var canClick = false;
     } else if (inProgress == true) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
     if (canClick == true) {
       currentChoice = this;
 
-      // DETERMINE IF FIRST CLICK OR SECOND CLICK
+      // determine if user is on their first selection or second selection
       if (token1 == false) {
         token1 = currentChoice.dataset.image;
         currentChoice.src = currentChoice.dataset.image;
@@ -97,7 +97,7 @@ $(document).ready(function() {
         token2 = currentChoice.dataset.image;
         currentChoice.src = currentChoice.dataset.image;
 
-        // CHECK IF 2 CLICKS ARE ON SAME IMAGE
+        // check if the two selections are for the same image
         if (token1 == token2) {
           currentChoice.dataset.alreadyMatched = 'true';
           lastChoice.dataset.alreadyMatched = 'true';
@@ -124,14 +124,14 @@ $(document).ready(function() {
       }
     }
 
-    // END OF GAME
+    // end of game
     function endGame() {
       finalTime = seconds - 1;
-      bestTime = localStorage.getItem(bestTime);
+      bestTime = parseInt(localStorage.getItem("bestTime"));
 
       if (finalTime < bestTime) {
-        localStorage.setItem(bestTime, finalTime);
-        $('#bestTime').html(bestTime + '<blink> (New High Score)</blink>');
+        localStorage.setItem("bestTime", finalTime);
+        $('#bestTime').html(finalTime + '<blink> (New High Score)</blink>');
       } else {
         $('#bestTime').html(bestTime);
       }
