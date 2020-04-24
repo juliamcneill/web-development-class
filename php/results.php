@@ -68,6 +68,9 @@
         $type .= 'P';
       }
 
+      $file = '../data/tracker.txt';
+      file_put_contents($file, $type . "\n", FILE_APPEND);
+
       $title = '';
       $description = '';
 
@@ -121,14 +124,16 @@
         $description .= 'As extroverts, Providers are talkative, energetic, and thrive around people. They prefer not to spend too much time alone. Highly observant, their focus lies more on the details than on how everything connects together. They trust facts over theories—and they make decisions based on what they can see right now. ESFJs are feelers who prioritize emotion rather than logic in their decision-making. Empathetic and diplomatic, they do what feels right rather than what makes sense. They’re structured and organized, preferring to plan ahead so they know what’s going to happen. They like rules, processes and schedules.';
       }
 
-
     ?>
 
     <form action="../php.html">
       <p>Your Type is <?php print $type; ?>: <em>The <?php print $title; ?></em></p>
       <p><?php print $description; ?></p>
-      <input type="submit" value="Take the Quiz Again!">
+      <input type="submit"value="Take the Quiz Again!">
       <p id="source">Description Source: <a href="https://www.crystalknows.com/myers-briggs-test" target="_blank">Crystal Knows</a></p>
+    </form>
+    <form action="tracker.php">
+      <input type="submit" value="See All Results">
     </form>
 
   </body>
