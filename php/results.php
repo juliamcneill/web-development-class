@@ -129,7 +129,7 @@
     <form action="../php.html">
       <p>Your Type is <?php print $type; ?>: <em>The <?php print $title; ?></em></p>
       <p><?php print $description; ?></p>
-      <input type="submit"value="Take the Quiz Again!">
+      <input type="submit" value="Take the Quiz Again!">
       <p id="source">Description Source: <a href="https://www.crystalknows.com/myers-briggs-test" target="_blank">Crystal Knows</a></p>
     </form>
     <form action="tracker.php">
