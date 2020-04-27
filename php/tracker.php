@@ -104,7 +104,7 @@
       <div class="label">ESTP: <?= (round(($estp / $total) * 100)) . '%'; ?></div><div class="bar" id="estp"></div>
       <div class="label">ESTJ: <?= (round(($estj / $total) * 100)) . '%'; ?></div><div class="bar" id="estj"></div>
       <div class="label">ESFP: <?= (round(($esfp / $total) * 100)) . '%'; ?></div><div class="bar" id="esfp"></div>
-      <div class="label">ESFJ: <?= (round(($esfj / $total) * 100)) . '%'; ?></div><div class="bar" id="isfj"></div>
+      <div class="label">ESFJ: <?= (round(($esfj / $total) * 100)) . '%'; ?></div><div class="bar" id="esfj"></div>
 
       <input type="submit" value="Take the Quiz Again!">
     </form>
