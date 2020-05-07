@@ -3,11 +3,13 @@ body {
   margin: 0px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
 #container {
   width: 800px;
   margin: auto;
   background-color: #095087;
 }
+
 #leftcolumn {
   width: 200px;
   float: left;
@@ -15,25 +17,32 @@ body {
   padding: 15px;
   box-sizing: border-box;
 }
+
 #leftcolumn img {
   width: 100%;
 }
+
 #leftcolumn ul {
   list-style-type: none;
 }
+
 #leftcolumn ul li{
   margin-bottom: 10px;
 }
+
 .navlink {
   color: #b5d1de;
   text-decoration: none;
 }
+
 .navlink:hover {
   color: #ffffff;
 }
+
 .active {
   color: #fff;
 }
+
 #rightcolumn {
   width 600px;
   background-color: white;
@@ -42,6 +51,7 @@ body {
   padding: 15px;
   box-sizing: border-box;
 }
+
 #header {
   font-size: 150%;
   font-weight: bold;
@@ -49,15 +59,18 @@ body {
   border-bottom: 1px solid #ccc;
   margin-bottom: 15px;
 }
+
 #content {
   line-height: 140%;
 }
+
 #alert {
   background-color: #ff0000;
   color: white;
   padding: 15px;
   font-size: 200%;
 }
+
 textarea {
   display: block;
   width: 100%;
