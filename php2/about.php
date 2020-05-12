@@ -23,8 +23,6 @@
       </div>
       <div id="rightcolumn">
         <?php
-          // figure out if there's any data inside of
-          // the alerts.txt file
           $alert_data = file_get_contents($file_path."/alerts.txt");
 
           if ($alert_data != "") {
