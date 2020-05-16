@@ -1,7 +1,4 @@
 <?php
-  // before we load the page we need to load in our 'config.php' file
-  // this file contains PHP variables that our page will need to access,
-  // such as the file path of the 'data' folder
   include('config.php');
 ?>
 <!DOCTYPE html>

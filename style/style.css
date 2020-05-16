@@ -19,12 +19,6 @@ a {
   text-decoration: none;
 }
 
-#footer {
-  text-align: center;
-  padding-top: 25px;
-  clear: both;
-}
-
 .icon {
   height: 100px;
   float: left;
@@ -43,6 +37,17 @@ a {
   border: grey solid 2px;
   transition: border .3s ease-in-out;
   box-shadow: 5px 7px grey;
+}
+
+#finalIcon {
+  width: 30%;
+  margin: 20px 35%;
+}
+
+#footer {
+  text-align: center;
+  padding-top: 25px;
+  clear: both;
 }
 
 @media screen and (min-width: 961px) {
